@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Ejercicio 2 – Guía 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Carrito de Compras</h1>
+
+    <section class="panel">
+      <h2>Productos</h2>
+      <div class="row">
+        <label>Nombre <input id="nombre" placeholder="Leche" /></label>
+        <label>Unidades <input id="unidades" type="number" min="1" value="1" /></label>
+        <label>Precio ($) <input id="precio" type="number" min="0" step="0.01" value="1.25" /></label>
+        <button id="agregar">Agregar</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Detalle</h2>
+      <table class="tabla">
+        <thead>
+          <tr>
+            <th>Producto</th><th>Unidades</th><th>Precio</th><th>Subt.</th><th></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="total">Total: $ <span id="total">0.00</span></div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
