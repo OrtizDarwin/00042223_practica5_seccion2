@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; background:#6a119a; color:#e5e7eb; }
+.container { max-width: 900px; margin: 32px auto; padding: 16px; }
+h1, h2 { margin: 0 0 12px; }
+.panel { background:#353b74; border:1px solid #2fa8dc; padding:16px; border-radius:14px; margin-bottom:16px; }
+.row { display:grid; grid-template-columns: 1fr 140px 140px auto; gap:10px; align-items:end; }
+label { display:flex; flex-direction:column; font-size:14px; gap:6px; }
+input { padding:8px; border-radius:10px; border:1px solid #5dd3bf; background:#0b1220; color:#e5e7eb; }
+button { padding:10px 14px; border:0; border-radius:10px; background:#22d3ee; color:#0b1220; font-weight:700; cursor:pointer; }
+button:hover { filter:brightness(0.95); }
+.tabla { width:100%; border-collapse: collapse; }
+.tabla th, .tabla td { border-bottom:1px solid #1f2937; padding:10px; text-align:left; }
+.total { text-align:right; margin-top:12px; font-size:20px; font-weight:700; }
+.borrar { background:#ef4444; color:#fff; padding:6px 10px; border-radius:8px; border:0; cursor:pointer; }
+.borrar:hover { filter:brightness(0.95); }
